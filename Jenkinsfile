@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git branch: 'main', url: 'https://github.com/sharithsaavedra1/maicol.git'
+                 git branch: 'feature/login-ui', url: 'https://github.com/sharithsaavedra1/maicol.git'
             }
         }
 
