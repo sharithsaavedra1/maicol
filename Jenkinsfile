@@ -19,13 +19,6 @@ pipeline {
                 sh 'test -f script_v1.js'
             }
         }
-
-        stage('Error intencional') {
-            steps {
-                sh 'echo "Simulando error controlado para la iteracion 2"'
-                sh 'exit 1'
-            }
-        }
     }
 
     post {
